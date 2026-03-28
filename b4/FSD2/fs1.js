@@ -1,0 +1,15 @@
+// FILE SYSTEM MODULE ( FS )
+
+ var fs = require("fs")
+ 
+//  fs.mkdirSync("temp")
+ fs.writeFileSync("text.txt","Hellooooo ABCD!!")
+//  fs.rmdirSync("temp")
+var r=fs.readFileSync("text.txt")
+console.log(r)
+console.log(r.toString())
+fs.appendFileSync("text.txt","\nHow are You ??")
+var r1=fs.readFileSync("text.txt","utf-8")
+console.log(r1)
+fs.renameSync('text.txt','temp.txt')
+// fs.unlinkSync('temp.txt')

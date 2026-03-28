@@ -1,0 +1,26 @@
+<!-- initialized 2 variables and increment both the var each time and display the add of both var at interval og 2s -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        let a =20;
+       let b =20;
+       let count=0
+       
+        
+        const i= setInterval(()=>{
+            document.getElementById("p1").innerHTML= ++a + ++b
+            count++
+            if (count===5){
+                clearInterval(i)
+        }},1000)
+    </script>
+</body>
+</html>
