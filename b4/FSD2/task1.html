@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var d={'FSD':[{'topic':'JSON','phase':'T1'},{'topic':'NODEJS','phase':'T1'}]}
+        document.write(`
+        <table border="1"> 
+            <tr>
+                <th>topic</th>
+                <th>phase</th>
+            </tr>
+            <tr>
+                <td>${d.FSD[0].topic}</td>
+                <td>${d.FSD[0].phase}</td>
+            </tr>
+            <tr>
+                <td>${d.FSD[1].topic}</td>
+                <td>${d.FSD[1].phase}</td>
+            </tr>
+        </table>
+            `)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
