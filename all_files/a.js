@@ -1,0 +1,5 @@
+expr=require('express')
+app=expr()
+f=require('./api2_router')
+app.use('/p',f)
+app.listen(5566)
